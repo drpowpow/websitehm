@@ -1,5 +1,5 @@
 #!/usr/bin/python
-import mysql.connector
+#import MySQLdb
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
 
@@ -16,11 +16,11 @@ app.config.from_object(__name__)
 
 
 def connect_db():
-    return mysql.connector.connect(app.config['DATABASE'])
+    return MySQLdb.connect(app.config['DATABASE'])
 
 @app.route('/')
 def show_entries():
-    return render_template('templates/about.html')
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()
