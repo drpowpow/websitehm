@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/kunden/homepages/34/d211403778/htdocs/custom/bin/python
 #import MySQLdb
 from flask import Flask, request, session, g, redirect, url_for, \
      abort, render_template, flash
