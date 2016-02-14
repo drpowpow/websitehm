@@ -19,7 +19,7 @@ def connect_db():
 
 @app.route('/')
 def show_entries():
-    return render_template('home.html')
+    return render_template('about.html')
 
 if __name__ == '__main__':
     app.run()
